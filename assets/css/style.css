@@ -1,7 +1,7 @@
 :root {
     --primary-color: black;
     --secondary-color: white;
-    --third-color: grey;
+    --third-color: pink;
 }
 
 * {
@@ -60,6 +60,11 @@ a {
     text-decoration: none;
 }
 
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
 .hero {
     width: 80%;
     margin: 150px 10% 80px 10%;
@@ -82,8 +87,30 @@ a {
     opacity: 0.65;
 }
 
-.main-content h2 {
+h2 {
     font-size: 75px;
+}
+
+.main-content h3 {
+    position: relative;
+    text-align: center;
+    font-size: 50px;
+    font-style: italic;
+    padding: 0 30px;
+    margin: 30px 0;
+    color: var(--third-color);
+}
+
+/* Class to create a border smaller than the div width */
+
+.main-content h3::before {
+    content : "";
+    position: absolute;
+    left    : 25%;
+    bottom  : 0;
+    height  : 1px;
+    width   : 50%;  /* or 100px */
+    border-bottom:1px solid var(--third-color);
 }
 
 .main-block {
@@ -110,9 +137,15 @@ a {
 .main-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     padding-top: 80px;
     margin: 0 10%;
+    text-align: center;
+}
+
+.main-flex p {
+    max-width: 80%;
+    margin: 0 auto 15px; auto;
 }
 
 .been-up-to {
@@ -127,14 +160,57 @@ a {
 .last-music-release {
     margin-top: 20px;
     border: 1px solid;
-    padding: 500px 40px;
-    flex-basis: 40%;
+    padding: 0 100px 20px 100px;
+    flex-basis: 35%;
+    
+    background-image: url(../images/music\ banner.png);
+    background-size: contain;
 }
 
 .last-project {
     margin-top: 20px;
     border: 1px solid;
-    padding: 40px;
-    flex-basis: 40%;
+    flex-basis: 50%;
+    background-image: url(../images/music\ banner.png);
+    background-size: contain;
 }
 
+.last-project img {
+    max-width: 400px;
+}
+
+.socials {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.socials h2 {
+    padding: 15px 400px;
+    margin: 45px 0px;
+    background-image: url(../images/bandcamp\ header.png);
+}
+
+.socials ul {
+    list-style-type: none;
+}
+
+.socials ul li {
+    flex-basis: 50%;
+    font-size: 30px;
+}
+
+.list-right {
+    text-align: right;
+    margin-left: 40%;
+}
+
+.socials li:hover {
+    background-color: var(--secondary-color);
+    
+}
+
+.socials li:hover .sociallink {
+    color: var(--primary-color);
+}
