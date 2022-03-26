@@ -149,13 +149,13 @@ h2 {
     flex-wrap: wrap;
     justify-content: space-around;
     padding-top: 80px;
-    margin: 0 10%;
+    margin: 0 10vw;
     text-align: center;
 }
 
 .main-flex p {
     max-width: 80%;
-    margin: 0 auto 15px; auto;
+    margin: 0 auto 15px;
 }
 
 .been-up-to {
@@ -168,25 +168,33 @@ h2 {
 
 
 .last-music-release {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
     border: 1px solid;
-    padding: 0 100px 20px 100px;
-    flex-basis: 35%;
+    padding: 0 2vw 20px 2vw;
+    flex: 1;
+    max-width: 30vw;
     
     background-image: url(../images/music\ banner.png);
     background-size: contain;
 }
 
 .last-project {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-top: 20px;
     border: 1px solid;
-    flex-basis: 50%;
+    flex: 1;
+    max-width: 30vw;
     background-image: url(../images/music\ banner.png);
     background-size: contain;
 }
 
 .last-project img {
-    max-width: 400px;
+    max-width: 25vw;
 }
 
 .socials {
