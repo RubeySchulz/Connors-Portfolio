@@ -312,6 +312,7 @@ iframe {
         display: block;
         width: 100%;
         font-size: 40px;
+        margin-bottom: 10px;
     }
 
     .content-box {
@@ -320,10 +321,16 @@ iframe {
         width: 100%;
         justify-content: center;
         margin: 10px auto;
+        padding: 0 2vw 60px 2vw;
+    }
+
+    .content-box img {
+        max-width: 46vw;
     }
 
     iframe {
-        width: 40vw;
+        width: 45vw;
+        height: 60vw;
     }
 
     .content-box-2 h2 {
