@@ -1,7 +1,9 @@
+/* Header and Global styling */
+
 :root {
     --primary-color: black;
     --secondary-color: white;
-    --third-color: pink;
+    --third-color: rgb(253, 113, 190);
 }
 
 * {
@@ -45,6 +47,8 @@ header img {
 
 ul {
     list-style-type: none;
+    padding-left: 0px;
+    margin: 0;
 }
 
 header ul {
@@ -66,29 +70,26 @@ header ul li:hover .header-link {
     color: var(--primary-color);
 }
 
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+#icons {
+    display: flex;
+    align-items:flex-end;
+    margin-left: 2px;
+    margin-bottom: 2px;
+}
+
 a {
     text-decoration: none;
     color: white;
 }
 
 footer {
-    padding: 30px 0;
-    margin-top: 30px;
-    background-color: #3D1037;
-}
-
-.image-dump {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10px 50px;
-}
-
-.image-dump img {
-    max-width: 500px;
-    min-width: 200px;
-    object-fit: scale-down;
-    margin: 10px;
+    padding: 1vh 0;
+    background-color: var(--third-color);
 }
 
 footer p {
@@ -104,22 +105,26 @@ iframe {
     height: 40vw;
 }
 
-.icon {
-    width: 30px;
-    height: 30px;
-}
-
-#icons {
-    display: flex;
-    align-items:flex-end;
-    margin-left: 2px;
-    margin-bottom: 2px;
-}
-
 /*Small global for flexbox line breaks*/
 .break {
     flex-basis: 100%;
     height: 0;
+}
+
+/* Index Styling */
+
+.image-dump {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 50px;
+}
+
+.image-dump img {
+    max-width: 500px;
+    min-width: 200px;
+    object-fit: scale-down;
+    margin: 10px;
 }
 
 /*hero CSS selectors*/
@@ -145,7 +150,7 @@ iframe {
     opacity: 0.65;
 }
 
-/*Everything down until socials is the CSS for the "latest updates" section*/
+/* Who Am I Section */
 
 .main-content h3 {
     position: relative;
@@ -250,9 +255,49 @@ iframe {
 /* ABOUT PAGE */
 
 .about-content {
+    width: 100%;
+    height: 86vh;
     background-image: url(../images/bartho\ new.png);
     background-repeat: no-repeat;
-    background-size: inherit;
-    background-position: -100px, -100px;
-    background-blend-mode: lighten;
+    background-size: cover;
+    padding-top: 8vh;
+    padding-right: 30vw;
+}
+
+.about-content .container {
+    width: 100%;
+    height: 90%;
+}
+
+.about-title h3 {
+    font-size: 60px;
+}
+
+.about-list {
+    padding-left: 200px;
+    font-size: 30px;
+}
+
+.about-footer {
+    font-size: 18px;
+}
+
+/* CODE PAGE */
+
+.code-section button {
+    background:none;
+    text-decoration:none;
+    border: 1px solid white;
+}
+
+.code-section button p {
+    text-align: end;
+    margin-top: 5px;
+    margin-left: 100px;
+    border-top: 2px solid white;
+    font-size: 40px;
+}
+
+.code-section button img {
+    width: 600px;
 }
