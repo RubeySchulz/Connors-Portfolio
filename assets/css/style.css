@@ -43,11 +43,15 @@ header img {
     flex-wrap: nowrap;
 }
 
+ul {
+    list-style-type: none;
+}
+
 header ul {
     display: flex;
     flex-wrap: wrap;
-    list-style-type: none;
 }
+
 header ul li {
     font-size: 35px;
     padding: 20px 30px;
@@ -64,12 +68,27 @@ header ul li:hover .header-link {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 footer {
     padding: 30px 0;
     margin-top: 30px;
     background-color: #3D1037;
+}
+
+.image-dump {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px 50px;
+}
+
+.image-dump img {
+    max-width: 500px;
+    min-width: 200px;
+    object-fit: scale-down;
+    margin: 10px;
 }
 
 footer p {
@@ -171,14 +190,6 @@ iframe {
     font-size: 35px;
 }
 
-
-
-
-
-
-
-
-
 /* media query for tablet sized screens */
 @media screen and (max-width: 820px){
     .hero {
@@ -234,4 +245,14 @@ iframe {
         padding-top: 40px;
     }
 
+}
+
+/* ABOUT PAGE */
+
+.about-content {
+    background-image: url(../images/bartho\ new.png);
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background-position: -100px, -100px;
+    background-blend-mode: lighten;
 }
