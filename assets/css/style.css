@@ -28,13 +28,19 @@ p {
 header {
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid white;
 }
 
 header img {
     margin-right: 10px;
     margin-top: 5px;
     width: 110px;
-    height: 90px;
+    height: 80px;
+}
+
+.header-stuff {
+    display: flex;
+    flex-wrap: nowrap;
 }
 
 header ul {
@@ -77,6 +83,18 @@ h2 {
 iframe {
     width: 20vw; 
     height: 40vw;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+#icons {
+    display: flex;
+    align-items:flex-end;
+    margin-left: 2px;
+    margin-bottom: 2px;
 }
 
 /*Small global for flexbox line breaks*/
@@ -153,94 +171,12 @@ iframe {
     font-size: 35px;
 }
 
-.main-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    padding-top: 80px;
-    margin: 0 10vw;
-    text-align: center;
-}
 
-.main-flex p {
-    max-width: 80%;
-    margin: 0 auto 15px;
-}
 
-.been-up-to {
-    text-align: right;
-    display: flex;
-    justify-content: flex-end;
-    border-bottom: 1px solid;
-}
 
-.been-up-to-2 {
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    border-bottom: 1px solid;
-    display: none;
-}
 
-/*Individual selectors for the boxes with my latest projects in them*/
-.content-box {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    
-    align-content: flex-start;
-    margin-top: 20px;
-    border: 1px solid;
 
-    padding: 0 2vw 20px 2vw;
-    flex: 1;
-    max-width: 30vw;
-    background-image: url(../images/music\ banner.png);
-    background-size: contain;
-}
 
-.content-box img {
-    max-width: 25vw;
-}
-
-/* All CSS for the social media section of the website */ 
-
-.socials {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-}
-
-.socials h2 {
-    padding: 15px 25vw;
-    margin: 45px 0px;
-    background-image: url(../images/bandcamp\ header.png);
-    background-size: cover;
-}
-
-.socials ul {
-    list-style-type: none;
-}
-
-.socials ul li {
-    flex-basis: 50%;
-    font-size: 30px;
-}
-
-.list-right {
-    text-align: right;
-    margin-left: 40%;
-}
-
-.socials li:hover {
-    background-color: var(--secondary-color);
-    
-}
-
-.socials li:hover .sociallink {
-    color: var(--primary-color);
-}
 
 
 /* media query for tablet sized screens */
@@ -254,22 +190,10 @@ iframe {
         font-size: 25px;
     }
 
-    .socials h2 {
-        padding: 20px 30vw;
-        font-size: 50px;
-    }
-
-    .socials ul li {
-        font-size: 40px;
-    }
-
     .main-content h3 {
         font-size: 4vw;
     }
 
-    .content-box {
-        max-width: 35vw;
-    }
 }
 /* media query for phone sized screens */
 @media screen and (max-width: 450px){
@@ -308,46 +232,6 @@ iframe {
 
     .main-flex {
         padding-top: 40px;
-    }
-    .been-up-to {
-        display: none;
-    }
-
-    .been-up-to-2 {
-        display: block;
-        width: 100%;
-        font-size: 40px;
-        margin-bottom: 10px;
-    }
-
-    .content-box {
-        order: 2;
-        max-width: 100%;
-        width: 100%;
-        justify-content: center;
-        margin: 10px auto;
-        padding: 0 2vw 60px 2vw;
-    }
-
-    .content-box img {
-        max-width: 46vw;
-    }
-
-    iframe {
-        width: 45vw;
-        height: 60vw;
-    }
-
-    .content-box-2 h2 {
-        order: 1;
-    }
-    
-    .list-right{
-        margin: 0 auto;
-    }
-
-    .list-left{
-        margin: 0 auto;
     }
 
 }
