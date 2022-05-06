@@ -101,8 +101,7 @@ h2 {
 }
 
 iframe {
-    width: 20vw; 
-    height: 40vw;
+    height: 654px;
 }
 
 /*Small global for flexbox line breaks*/
@@ -300,4 +299,24 @@ iframe {
 
 .code-section button img {
     width: 600px;
+}
+
+/* MUSIC PAGE */
+
+.music-content .row {
+    flex-wrap: nowrap;
+    box-sizing: content-box;
+}
+
+.col-3 {
+    box-sizing: content-box;
+}
+
+.audio-files {
+    display: flex;
+    flex-wrap: wrap;
+}
+.audio-files p {
+    margin-top: 10px;
+    font-size: 20px;
 }
