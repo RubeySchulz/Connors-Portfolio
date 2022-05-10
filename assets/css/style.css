@@ -425,7 +425,7 @@ iframe {
 
     .overall-container {
         height: 100vh;
-        background-position: -1150px 0;
+        background-position: right bottom;
     }
 
     .about-content .container {
@@ -442,7 +442,7 @@ iframe {
     }
 
     .about-list li {
-        font-size: 25px;
+        font-size: 2.5vh;
     }
 
     .about-footer {
