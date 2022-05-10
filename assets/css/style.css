@@ -23,6 +23,11 @@ html {
     src: url('Engula-Regular.TFF');
 }
 
+body {
+    position: relative;
+    padding-bottom: 5vh;
+}
+
 p {
     font-family: 'Courier New', Courier, monospace;
 }
@@ -30,7 +35,6 @@ p {
 header {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid white;
 }
 
 header img {
@@ -71,15 +75,14 @@ header ul li:hover .header-link {
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 40px;
+    height: 40px;
 }
 
 #icons {
     display: flex;
-    align-items:flex-end;
-    margin-left: 2px;
-    margin-bottom: 2px;
+    align-items:center;
+    margin-left: 2vw;
 }
 
 a {
@@ -88,6 +91,9 @@ a {
 }
 
 footer {
+    position:absolute;
+    bottom: 0;
+    width: 100%;
     padding: 1vh 0;
     background-color: var(--third-color);
 }
@@ -102,6 +108,8 @@ h2 {
 
 iframe {
     height: 654px;
+    width: 400px;
+    padding: 0 20px;
 }
 
 /*Small global for flexbox line breaks*/
@@ -117,6 +125,7 @@ iframe {
     flex-wrap: wrap;
     justify-content: center;
     margin: 10px 50px;
+    margin-bottom: 0;
 }
 
 .image-dump img {
@@ -194,8 +203,109 @@ iframe {
     font-size: 35px;
 }
 
+
+
+/* ABOUT PAGE */
+
+.mobile {
+    display: none;
+}
+
+.about-body {
+    padding-bottom: 0;
+}
+
+.overall-container {
+    background-image: url(../images/bartho\ new.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.about-content {
+    width: 100%;
+    height: 86vh;
+    
+    padding-top: 8vh;
+    padding-right: 25vw;
+}
+
+.about-content .container {
+    width: 100%;
+    height: 90%;
+}
+
+.about-title h3 {
+    font-size: 60px;
+}
+
+.about-list {
+    padding-left: 200px;
+    font-size: 30px;
+}
+
+.about-footer {
+    display: flex;
+
+    padding-left: 2vw;
+    font-size: 18px;
+}
+
+/* CODE PAGE */
+
+.code-body {
+    height: 100vh;
+}
+
+.code-section button {
+    background:none;
+    text-decoration:none;
+    border: 1px solid white;
+}
+
+.code-section button p {
+    text-align: end;
+    margin-top: 5px;
+    margin-left: 100px;
+    border-top: 2px solid white;
+    font-size: 40px;
+}
+
+.code-section button img {
+    width: 600px;
+}
+
+/* MUSIC PAGE */
+
+.music-content .row {
+    flex-wrap: nowrap;
+    box-sizing: content-box;
+}
+
+.audio-files {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: end;   
+}
+.audio-files p {
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+.spotify {
+    height: 442px;
+}
+
+.music-content iframe {
+}
+
 /* media query for tablet sized screens */
 @media screen and (max-width: 820px){
+    .smiley {
+        display: none;
+    }
+
     .hero {
         background-size: 150%;
         background-position: 90% 60%;
@@ -209,14 +319,58 @@ iframe {
         font-size: 4vw;
     }
 
+    .header-stuff {
+        flex-wrap: wrap;
+    }
+
+    /* MUSIC */
+
+    .music-content h2 {
+        font-size: 15vw;
+    }
+
+    .music-content .row {
+        flex-wrap: wrap;
+    }
+
+    .audio-files {
+        margin-bottom: 10vw;
+        justify-content: start;  
+    }
+
+    /* CODE */
+
+    .code-section button {
+        margin-bottom: 2vh;
+    }
+
+    .code-section button img {
+        width: 80vw;
+    }
+
+       /* ABOUT */
+
+    .about-content {
+        padding-right: 0;
+    }
+
 }
 /* media query for phone sized screens */
 @media screen and (max-width: 450px){
-    header img {
-        margin-right: 20px;
-        margin-top: 38px;
-        width: 112px;
-        height: 97px;
+    
+    header ul li {
+        font-size: 25px;
+        padding: 10px 20px;
+    }
+
+    .header-stuff {
+        justify-content: center;
+        margin-bottom: 5px;;
+    }
+
+    .icon {
+        width: 30px;
+        height: 30px;
     }
 
     .hero {
@@ -249,74 +403,50 @@ iframe {
         padding-top: 40px;
     }
 
-}
+    /* CODE */
 
-/* ABOUT PAGE */
+    .code-section button p {
+        font-size: 20px;
+    }
 
-.about-content {
-    width: 100%;
-    height: 86vh;
-    background-image: url(../images/bartho\ new.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-top: 8vh;
-    padding-right: 30vw;
-}
+    .code-section h2 {
+        font-size: 30px;
+    }
 
-.about-content .container {
-    width: 100%;
-    height: 90%;
-}
+    /* ABOUT */
 
-.about-title h3 {
-    font-size: 60px;
-}
+    .desktop {
+        display:none;
+    }
 
-.about-list {
-    padding-left: 200px;
-    font-size: 30px;
-}
+    .mobile {
+        display: initial;
+    }
 
-.about-footer {
-    font-size: 18px;
-}
+    .overall-container {
+        height: 100vh;
+        background-position: -1150px 0;
+    }
 
-/* CODE PAGE */
+    .about-content .container {
+        height: initial;
+        padding-bottom: 2vh;
+    }
 
-.code-section button {
-    background:none;
-    text-decoration:none;
-    border: 1px solid white;
-}
+    .about-list {
+        padding-left: 0;
+    }
 
-.code-section button p {
-    text-align: end;
-    margin-top: 5px;
-    margin-left: 100px;
-    border-top: 2px solid white;
-    font-size: 40px;
-}
+    .about-list h3 {
+        font-size: 50px;
+    }
 
-.code-section button img {
-    width: 600px;
-}
+    .about-list li {
+        font-size: 25px;
+    }
 
-/* MUSIC PAGE */
-
-.music-content .row {
-    flex-wrap: nowrap;
-    box-sizing: content-box;
-}
-
-.col-3 {
-    box-sizing: content-box;
-}
-
-.audio-files {
-    display: flex;
-    flex-wrap: wrap;
-}
-.audio-files p {
-    margin-top: 10px;
-    font-size: 20px;
+    .about-footer {
+        justify-content: space-between;
+        margin: 0 20px;
+    }
 }
