@@ -16,15 +16,12 @@ Has support for tablet size screen, desktop, and mobile.
 
 ## UPDATE!!
 Second version of the website, expanded to multiple pages for room to add more links and add a bit more flare to the content.
+mobile friendly
 
 # Site: https://rubeyschulz.github.io/Connors-Portfolio/
 
-![image](https://user-images.githubusercontent.com/75327294/167212738-eae4e495-b00c-495e-aa97-e0dd805f1cc0.png)
-
-![image](https://user-images.githubusercontent.com/75327294/167212849-f2b76606-b13d-4d74-9450-d29c1c243127.png)
-
-![image](https://user-images.githubusercontent.com/75327294/167212885-37cd3c7e-f888-4c27-aba7-38a38ab7854d.png)
-
-![image](https://user-images.githubusercontent.com/75327294/167212925-5e06baee-dd80-4255-97b4-32f4e51e0776.png)
-
-![image](https://user-images.githubusercontent.com/75327294/167212955-b570308c-05c2-4290-9d17-e1b52c8c61ae.png)
+![image](https://user-images.githubusercontent.com/75327294/167549403-45e62c29-acbb-4d6d-a8f2-df9343ad56c5.png)
+![image](https://user-images.githubusercontent.com/75327294/167549526-9a7045a4-18dd-44ec-b320-33bd43527701.png)
+![image](https://user-images.githubusercontent.com/75327294/167549784-d16c8580-b0ae-43ff-aadf-ce9a8cf72bcf.png)
+![image](https://user-images.githubusercontent.com/75327294/167549906-bee75141-c161-4ddd-a6f0-322c6df683fb.png)
+![image](https://user-images.githubusercontent.com/75327294/167550030-64445586-7dd5-4430-afa7-07be1f993fb1.png)
