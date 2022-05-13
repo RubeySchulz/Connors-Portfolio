@@ -16,6 +16,7 @@
 
 html {
     background-color: black;
+    scroll-behavior: smooth;
 }
 /*Lets me use a custom font*/
 @font-face {
